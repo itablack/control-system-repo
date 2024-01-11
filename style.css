@@ -1,0 +1,66 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body { 
+    background-color: #000;
+}
+.faq {
+	padding: 96px;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+}
+
+.faq .container {
+	max-width: 951px;
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.faq .q {
+	cursor: pointer;
+	height: 80px;
+	border: 2px solid white;
+	border-radius: 16px;
+	padding: 24px;
+	font-family: "Raleway", sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.faq .q:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq .a {
+	display: none;
+	padding: 0;
+	cursor: pointer;
+	border: 2px solid white;
+	border-radius: 16px;
+	max-height: 0;
+	overflow: hidden;
+	transform: translateY(-13px);
+	font-family: "Raleway", sans-serif;
+	color: #fff;
+	transition: max-height 0.3s ease, padding 0.3s ease;
+
+	/* For the write up */
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.faq .a.show {
+	display: block;
+	max-height: 900px; /* Adjust as needed */
+	padding: 24px;
+}
