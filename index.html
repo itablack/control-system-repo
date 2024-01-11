@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="faq">
+        <div class="container">
+          <div class="q" data-target="q1"><p>Explain Version Control?</p></div>
+          <div class="a" id="q1">
+            <p>
+              A Version Control System (VCS) is a software tool that helps manage
+              changes to source code over time. It allows multiple developers to work 
+              collaboratively on a project, tracking changes, and coordinating updates to 
+              the codebase. The primary goals of a version control system include: <br><br>
+
+              Tracking Changes: VCS keeps a record of every change made to the source 
+              code, including who made the change, when it was made, and a description
+              of the change. <br><br>
+              
+              Collaboration: Multiple developers can work on the same project
+              simultaneously without interfering with each other's work. Changes made 
+              by one developer can be integrated with the work of others. <br><br>
+                            
+              Branching and Merging: VCS allows developers to create branches,
+              which are separate lines of development. This is useful for working 
+              on new features or bug fixes without affecting the main codebase. 
+              Branches can later be merged back into the main branch. <br><br>
+              
+              Conflict Resolution: When multiple developers make changes to the
+              same part of the code simultaneously, conflicts may arise. VCS provides
+              tools to resolve these conflicts and merge changes intelligently.
+            </p>
+          </div>
+          <div class="q" data-target="q2"><p>Explain difference between git and github</p></div>
+          <div class="a" id="q2">
+            <p>
+              Git: Git is a version control system that is installed and runs locally 
+              on a developer's machine. Developers can create Git repositories on their local
+              machines and work with version control without the need for an internet connection.
+              Git is a distributed version control system (DVCS) that allows developers to track 
+              changes in their source code during software development. It focuses on providing a 
+              command-line interface and a set of tools for managing repositories, branches, commits,
+              and merges locally on a developer's machine. <br><br>
+              GitHub: GitHub is a cloud-based platform that hosts Git
+              repositories remotely on its servers. Developers can push their
+              local Git repositories to GitHub, making them accessible to others. GitHub
+              facilitates collaboration by providing a central platform for sharing and
+              contributing to projects.
+              Graphical Interface and Collaboration Tools:
+              </p>
+          </div>
+          <div class="q" data-target="q3">
+            <p>List 3 other github alternatives </p>
+          </div>
+          <div class="a" id="q3">
+            <p>
+              GitLab:
+              Overview: GitLab is a web-based platform that provides Git repository management,
+              continuous integration, and more. It offers both a cloud-based service 
+              (GitLab.com) and a self-hosted option (GitLab CE and GitLab EE) that can be 
+              installed on your own servers. <br><br>
+              Bitbucket:
+              Overview: Bitbucket is a Git and Mercurial repository hosting service.
+              It offers features like pull requests, code collaboration, and integration
+              with other Atlassian products. Bitbucket is suitable for both small teams and
+              large enterprises. <br><br>
+              SourceForge:
+              Overview: SourceForge is an open-source platform that provides version 
+              control, bug tracking, collaboration tools, and more. It supports various 
+              version control systems, including Git, SVN, and Mercurial.
+            </p>
+          </div>
+          <div class="q" data-target="q4">
+            <p>Explain the differnce between git fetch and git pull </p>
+          </div>
+          <div class="a" id="q4">
+            <p>
+              git fetch: Fetching is like asking Git to go to the remote repository
+              and see if there are any changes. It retrieves the changes (new branches 
+              or updates to existing branches) from the remote repository to your local
+              repository. However, it does not automatically merge these changes into your
+              working directory. <br><br>
+
+              git pull: Pull, on the other hand, is like saying, "Fetch the changes and 
+              automatically merge them into my working directory." It combines the git fetch 
+              and git merge commands. So, not only does it bring the changes from the remote
+              repository to your local repository, but it also updates your working files to 
+              include those changes.
+            </p>
+          </div>
+          <div class="q" data-target="q5"><p>Explain in simple terms git rebase and the command for it</p></div>
+          <div class="a" id="q5">
+            <p>
+              Imagine you have a feature branch where you've been working on 
+              some changes, and there have been new changes on the main branch
+             (or another branch). <br>
+
+              Instead of merging those changes in (which creates additional merge commits),
+              you can use git rebase to move your changes on top of the latest changes from 
+              the main branch. <br>
+              
+              This makes the project history look more straightforward, as if you had
+              developed your changes directly on top of the latest main branch changes. <br><br>
+              
+              Here's the basic command for git rebase: <br>
+              git checkout your-feature-branch  <br>
+              git rebase target-branch <br><br>
+              Replace your-feature-branch with the name of the branch where you have your
+              changes, and target-branch with the branch where you want to place your changes 
+              on top of.
+            </p>
+          </div>
+          <div class="q" data-target="q6"><p>Explain in simple terms git cherry-pick and the command for it</p></div>
+          <div class="a" id="q6">
+            <p>
+              you have a commit on another branch that contains changes you want,
+              but you don't want to merge the entire branch. With git cherry-pick,
+              you can select just that one commit and apply it to your current branch. <br>
+              This is useful when you want to selectively bring changes from one
+              branch to another without merging all the changes in that branch. <br><br>
+              
+              Here's the basic command for git cherry-pick: <br>
+              git checkout your-destination-branch <br>
+              git cherry-pick commit-hash <br><br>
+              Replace your-destination-branch with the branch where you want to apply
+              the commit, and commit-hash with the hash of the commit you want to pick. <br>
+              After running these commands, Git will apply the changes 
+              introduced by the specified commit to your current branch.
+            </p>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="script.js"></script>
+</html>
